@@ -5,8 +5,13 @@ This is a working version of my CV, originally forked from the design by [Kieran
 ### Instructions
 
 The `Makefile` should already be setup to compile the `vita.tex`. From a command prompt, execute
-    
+
     $ make cv
     $ make view
 
-and the freshly-compiled file should be open in your default reader. 
+and the freshly-compiled file should be open in your default reader.
+
+
+### Todo / Future
+
+- [ ] port to [AwesomeCV](https://github.com/posquit0/Awesome-CV)?
