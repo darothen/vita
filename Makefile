@@ -1,16 +1,17 @@
-TEX = xelatex
 
-.PHONY: cv view clean
+VITA_ROOT = vita
+VITA = compiled/$(VITA_ROOT).pdf
 
-cv: compiled/vita.pdf
+all: $(VITA)
+cv: $(VITA)
 
-view:
-	open compiled/vita.pdf
+$(VITA): $(VITA_ROOT).tex
+	arara -v $<
+	mv $(VITA_ROOT).pdf $@
 
-compiled/vita.pdf: vita.tex
-	latexmk  -xelatex -use-make vita.tex
-	mv vita.pdf compiled/
-
+.PHONY:
 clean:
-	latexmk -CA
-	rm compiled/*.pdf
+	rubber --clean $(VITA_ROOT).tex
+.PHONY:
+deepclean: clean
+	$(RM) -f $(VITA)
