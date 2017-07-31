@@ -11,6 +11,8 @@ The `Makefile` should already be setup to compile the `vita.tex`. From a command
 
 and the freshly-compiled file should be open in your default reader.
 
+This document also uses [Academicons](http://jpswalsh.github.io/academicons/) (specifically, their [LaTeX port](https://www.ctan.org/tex-archive/fonts/academicons?lang=en))
+
 
 ### Todo / Future
 
