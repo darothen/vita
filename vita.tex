@@ -5,6 +5,7 @@
 \def\myauthor{Daniel Rothenberg}
 \def\mytitle{vita}
 \def\myemail{daniel@danielrothenberg.com}
+\def\myworkemail{darothen@waymo.com}
 \def\mytwitter{danrothenberg}
 \def\mywebsite{http://www.danielrothenberg.com}
 \def\mywebsiteshort{danielrothenberg.com}
@@ -148,6 +149,7 @@
     \flushright \footnotesize
     \href{tel:\myphone}{\myphone}~\faPhone \\
     \href{mailto:\myemail}{\myemail} ~\faEnvelope \\
+    \href{mailto:\myworkemail}{\myworkemail} ~\faEnvelope \\
     \href{https://www.twitter.com/\mytwitter}{@\mytwitter} ~\faTwitter \\
     \href{\mywebsite}{\mywebsiteshort} ~\faGlobe % \\
     % \href{http://orcid.org/0000-0002-8270-4831}{0000-0002-8270-4831} ~\aiOrcid
@@ -419,18 +421,24 @@ Reddit (volunteer)
 % % EMPLOYMENT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \medskip
 \mhead{Work \newline Experience}%
 
-\textbf{ClimaCell} \newline
-\emph{Chief Scientist} \rdate{\textsc{Sep} 2018-\textsc{present}}
+\textbf{\href{http://www.waymo.com}{Waymo}} \newline
+\emph{Atmospheric Science, Technical Lead} \rdate{\textsc{July} 2021-\textsc{Present}}
+
+\medskip
+\textbf{\href{http://www.tomorrow.io}{Tomorrow.io} (formerly ClimaCell)} \newline
+\emph{Advisor} \rdate{\textsc{July} 2021-\textsc{Present}}
+\newline
+\emph{Chief Scientist} \rdate{\textsc{Sep} 2018-\textsc{July} 2021}
 \newline
 \emph{Director of Meteorology} \rdate{\textsc{Aug} 2017-\textsc{Sep} 2018}
 \begin{itemize}[itemindent=-10pt]
 	\item Oversaw the research, development, and implementation of a real-time, global, high-resolution precipitation observation system using commercial cellular microwave links, radars, and satellite datasets
+  \item Managed and mentored a team of 2-6 physical scientists, data scientists, and engineers across multiple offices conducting research and product development to support company initiatives; group alumni have advanced their careers in atmospheric data science at CalTech, NOAA/CIRA, Indigo, Microsoft, and other high profile institutions/companies
+	\item Established an internal applied research division (ClimaCell Labs) with a focus on develop AI-powered applications for applied weather analysis and forecasting; developed proposals for SBIR and other competitive federal funding programs sponsored by NOAA, NSF, and DOE
   \item Created and managed long-term research and development roadmaps aligned with emerging company business and strategic opportunities
-  \item Managed a team of physical scientists, data scientists, and engineers across two offices conducting research and product development to support company initiatives
   \item Established professional forecasting services unit within the company to broaden product portfolio in support of improving client satisfaction and retention
   \item Developed and implemented a high-performance, Python-based quantitative precipitation nowcasting system optimized or performance on the cloud and deployed the model operationally (with >99.9\% SLA) to provide nowcasts based on radar and satellite-derived datasets for domains across the world
   \item Developed and prototyped a cloud-optimized, tera-scale geoscientific data archival system based on Pangeo stack (dask, Zarr, Intake, kubernetes) and curated over 100 TB of data from reanalysis (ERA-5), NWP (multi-year HRRR archive) and proprietary datasets 
@@ -464,8 +472,6 @@ Reddit (volunteer)
  \medskip
  \begin{enumerate}[itemindent=-10pt]
 
- \item Silva, S., Ma, P.-L., Hardin, J., \textbf{Rothenberg, D.}: Physically Regularized Machine Learning Emulators of Aerosol Activatoin (\emph{in review})
-
  \item \textbf{Rothenberg, D.}: Parameterization of sub-grid scale aerosol-cloud processes for climate models using auto-machine learning, (\emph{in prep})
 
  \item \textbf{Rothenberg, D.}, Eastham, S., Monier, E., Garcia-Menendez, F., Solomon, S., and Selin, N.: Quantifying the ``time of emergence'' of air quality climate penalties (\emph{in prep})
@@ -477,7 +483,9 @@ Reddit (volunteer)
  \medskip
  \begin{enumerate}[itemindent=-10pt]
 
-\item Koecorius, S., \textbf{et al}: \href{https://doi.org/10.5194/acp-19-14339-2019}{New particle formation and its effect on CCN abundance in the summer Arctic: a case study during PS106 cruise}, Atmos. Chem. Phys., doi:10.5194/acp-19-14339-2019, 2019.
+ \item Silva, S., Ma, P.-L., Hardin, J., \textbf{Rothenberg, D.}: \href{https://doi.org/10.5194/gmd-14-3067-2021}{Physically Regularized Machine Learning Emulators of Aerosol Activation}, Geosci. Model Dev., 14, 3067–3077, doi:10.5194/gmd-14-3067-2021, 2021.
+
+ \item Koecorius, S., \textbf{et al}: \href{https://doi.org/10.5194/acp-19-14339-2019}{New particle formation and its effect on CCN abundance in the summer Arctic: a case study during PS106 cruise}, Atmos. Chem. Phys., doi:10.5194/acp-19-14339-2019, 2019.
 
  \item Dimanchev, E. G., Paltesev, S., Yuan, M., \textbf{Rothenberg, D.}, Tessum, C. W., Marshall, J. D., and Selin, N. E.: \href{https://doi.org/10.1088/1748-9326/ab31d9}{Health co-benefits of sub-national renewable energy policy in the US}, Environ. Res. Lett. 14, 085012, doi:10.1088/1748-9326/ab31d9, 2019.
 
@@ -566,6 +574,8 @@ Reddit (volunteer)
 \medskip
 \begin{itemize}[itemindent=-10pt]
 
+ \item Eastham, S., Monier, E., \textbf{Rothenberg, D.}, Paltsev, S., Selin, N. \href{https://agu.confex.com/agu/fm20/meetingapp.cgi/Paper/740077}{Incorporating High-fidelity Air Quality Simulation into Integrated Assessment Models}. AGU Fall Meeting. San Francisco, CA, 2020.
+
  \item Givati, A. \textbf{et al}. \href{https://ams.confex.com/ams/2020Annual/meetingapp.cgi/Paper/369441}{Using Multiple Precipitation Inputs for Flash-Flood Forecasting in Semiarid Environments}. 34th Conference on Hydrology, AMS Annual Meeting. Boston, MA, 2020.
 
  \item Eastham, S., Monier, E., \textbf{Rothenberg, D.}, Selin, N. \href{https://ams.confex.com/ams/2020Annual/meetingapp.cgi/Paper/369266}{Time of Emergence for the Influence of Climate Change on Surface Ozone}. 22nd Conference on Atmospheric Chemistry, AMS Annual Meeting. Boston, MA, 2020.
@@ -643,7 +653,6 @@ Reddit (volunteer)
 
  \item Elkabetz, S. \textbf{et al}. \href{https://patents.google.com/patent/WO2019126707A1/}{Improved real-time weather forecasting system}. World Patent WO2019126707A1. June 27, 2019.
  
-
 \end{itemize}
 
 
@@ -687,11 +696,12 @@ Association for Computing Machinery \rdate{2011-2012} \newline
 \emph{\small{Note: Please visit my \href{http://www.github.com/darothen/}{Github} page for examples of projects implementing these skills}}\newline
 
 \begin{itemize}
-  \item \textbf{Data Science} - Python (\emph{expert}), Spark/dask/MPI, Matlab, Java, d3.js, git/hg/svn, R (\emph{familiar})
+  \item \textbf{Data Science} - Python (\emph{expert}), Spark/dask/MPI, Prefect/Airflow/Argo, Matlab, Java, d3.js, git/hg/svn, R (\emph{familiar})
   \item \textbf{Numerical Modeling} - Python/NumPy/Cython/Numba, Julia, legacy/modern Fortran, C/C++/CUDA (\emph{familiar}); emphasis on scientific software design and application of software engineering to numerical codes/tools, as well as the development of high-performance, distributed analysis systems for tera/peta-scale data.
+  \item \textbf{DevOps} - Kubernetes, Argo, Helm 
   \item \textbf{Atmospheric/Climate Models} - \href{http://www.github.com/darothen/pyrcel}{pyrcel}, GEOS-Chem/GCHP, CESM, MIT-CRM, WRF (\emph{familiar})
-  \item \textbf{High-Performance Computing} - Google Cloud Platform/Amazon Web Services; Multi-user shared clusters; NCAR supercomputers (bluefire/yellowstone/cheyenne); previously worked on NERSC and Oak Ridge systems
-  \item \textbf{Web Design} - Django, ghost, HTML/CSS
+  \item \textbf{High-Performance Computing} - Google Cloud Platform/Amazon Web Services; NCAR supercomputers (bluefire/yellowstone/cheyenne); previously worked on NERSC and Oak Ridge systems
+  \item \textbf{Web Design} - Django, ghost, Pelican, HTML/CSS
 \end{itemize}
 
 
