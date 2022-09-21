@@ -41,6 +41,7 @@
   pdfauthor={\myauthor},
   pdfkeywords={\mykeywords}
 ]{hyperref}
+\defaultfontfeatures{Extension = .otf}
 \usepackage{fontawesome}
 % \usepackage{academicons}
 
@@ -114,6 +115,8 @@
 
 \setmainfont[
   Ligatures={TeX,Common},
+  Path=/Users/daniel/Library/Fonts/,
+  Extension=.ttf
 %  BoldFont={AGaramondPro-Semibold},
 ]{Corbel} % other options: Corbel, Palatino, Adobe Garmond Pro, TeX Gyre Common.
           % Corbel is a Microsoft font and no longer distributed with Office 2016 and above; Liberation Sans is a potential alternative
@@ -121,8 +124,10 @@
   Ligatures={TeX,Common},
   Letters=SmallCaps,
   Color=660000,
+  Path=/Users/daniel/Library/Fonts/,
+  Extension=.ttf
 ]{Corbel}
-\setmonofont{FontAwesome}
+% \setmonofont{FontAwesome}
 
 \begin{document}
 \pagestyle{fancy} \setlength\headwidth{6.5in}
