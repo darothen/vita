@@ -1,4 +1,5 @@
 % arara: xelatex
+% arara: xelatex
 % arara: clean: {extensions: [aux, log, out]}
 \documentclass[11pt,letterpaper]{article}
 
@@ -116,7 +117,10 @@
 \setmainfont[
   Ligatures={TeX,Common},
   Path=/Users/daniel/Library/Fonts/,
-  Extension=.ttf
+  Extension=.ttf,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic,
+  BoldItalicFont=*-BoldItalic,
 %  BoldFont={AGaramondPro-Semibold},
 ]{Corbel} % other options: Corbel, Palatino, Adobe Garmond Pro, TeX Gyre Common.
           % Corbel is a Microsoft font and no longer distributed with Office 2016 and above; Liberation Sans is a potential alternative
@@ -377,6 +381,7 @@ AMS Committee on Environmental Information Processing Technologies
 \medskip
 \textbf{Reviewer}
 \begin{itemize}
+  \item Proceedings of the National Academies of Science
   \item Journal of Geophysical Research - Atmospheres
   \item Journal of Climate
   \item Atmospheric Chemistry and Physics
@@ -430,7 +435,7 @@ Reddit (volunteer)
 \mhead{Work \newline Experience}%
 
 \textbf{\href{http://www.waymo.com}{Waymo}} \newline
-\emph{Atmospheric Science, Technical Lead} \rdate{\textsc{July} 2021-\textsc{Present}}
+\emph{Technical Lead, Atmospheric Science (Staff Software Engineer)} \rdate{\textsc{July} 2021-\textsc{Present}}
 
 \medskip
 \textbf{\href{http://www.tomorrow.io}{Tomorrow.io} (formerly ClimaCell)} \newline
@@ -477,9 +482,7 @@ Reddit (volunteer)
  \medskip
  \begin{enumerate}[itemindent=-10pt]
 
- \item \textbf{Rothenberg, D.}: Parameterization of sub-grid scale aerosol-cloud processes for climate models using auto-machine learning, (\emph{in prep})
-
- \item \textbf{Rothenberg, D.}, Eastham, S., Monier, E., Garcia-Menendez, F., Solomon, S., and Selin, N.: Quantifying the ``time of emergence'' of air quality climate penalties (\emph{in prep})
+ \item Eastham, S., Monier, E., \textbf{Rothenberg, D.}, Paltsev, S., Selin, N.: Rapid estimation of climate-air quality interactions in integrated assessment using a response surface model, \textit{submitted} ACS Environmental AU, 2022
 
  \end{enumerate}
 
@@ -571,6 +574,10 @@ Reddit (volunteer)
  \item Status of AI in the Atmospheric Sciences. \textit{Panelist}, 18th Conference on Artificial and Computational Intelligence and its Applications to the Environmental Sciences, AMS Annual Meeting, Phoenix, AZ, 2019.
  
  \item Augmented Weather Applications with Artifical Intelligence. \textit{Chair/Convener}, AMS Washington Forum, Washington, D.C., 2019
+
+ \item Using ML/AI for Data-Driven Decision-making. \textit{Presenter/Panelist}, Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunites and Challenges, Washington, D.C., 2022
+ 
+ \item Self-Driving Automated Vehicles - Role of Public and Private Sector, \textit{Panelist}, AMS Washington Forum, Washington, D.C., 2022
 
 \end{itemize}
 
@@ -716,7 +723,7 @@ Association for Computing Machinery \rdate{2011-2012} \newline
 
 \medskip
 \mhead{Personal \newline Interests}%
-Violin performance - classical (22 years),
+Violin performance - classical (24 years),
 Winter sports,
 Backpacking/hiking,
 Software development/
