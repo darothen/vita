@@ -6,7 +6,7 @@
 \def\myauthor{Daniel Rothenberg}
 \def\mytitle{vita}
 \def\myemail{daniel@danielrothenberg.com}
-\def\myworkemail{darothen@waymo.com}
+\def\myworkemail{darothen@google.com}
 \def\mytwitter{danrothenberg}
 \def\mywebsite{http://www.danielrothenberg.com}
 \def\mywebsiteshort{danielrothenberg.com}
@@ -178,13 +178,18 @@
 \mhead{Research \newline Interests}
 
 As a leader and innovator in the atmospheric sciences, I've employed novel
-analytical, modeling, "big data", and machine learning techniques to help
+analytical, modeling, "big data", and AI/ML techniques to help
 pioneer the field of "atmospheric data science" and tackle cutting-edge
-research questions in the world of weather and climate. In my academic 
-career I studied the multi-faceted role of aerosols in the climate system,
-especially their influences on clouds and their indirect effects on climate;
-I've also studied the role of climate variability in driving air quality 
-as a means for better understanding the impacts of climate air pollution 
+research questions in the world of weather and climate. \\ \\
+In my professional career I've championed the application of AI and ML to build
+new weather forecast and analysis products by both leading and working hands-on 
+with inter-disciplinary teams of research scientists, software engineers, and
+data scientists. I've also worked with product, strategy, and business teams to
+develop and execute visions to productize within this space. \\ \\
+In my academic career I studied the multi-faceted role of aerosols in the 
+climate system, especially their influences on clouds and their indirect effects
+on climate; I've also studied the role of climate variability in driving air
+quality as a means for better understanding the impacts of climate air pollution 
 policy. \\ \\
 Throughout my research career I've been committed to helping develop open 
 source software and tools in order to support novel applications of machine
@@ -434,8 +439,23 @@ Reddit (volunteer)
 \medskip
 \mhead{Work \newline Experience}%
 
+\textbf{\href{http://research.google.com}{Google Research}} \newline
+\emph{Staff Software Engineer (Bungee)} \rdate{\textsc{November} 2023-\textsc{Present}}
+\begin{itemize}[itemindent=-10pt]
+  \item Developed and implemented evaluation frameworks and software to guide the development of a fourth-generation MetNet AI-based short-range forecasting system, with an emphasis on supporting downstream product applications in Africa, South America, and India
+\end{itemize}
+
+\medskip
 \textbf{\href{http://www.waymo.com}{Waymo}} \newline
-\emph{Technical Lead, Atmospheric Science (Staff Software Engineer)} \rdate{\textsc{July} 2021-\textsc{Present}}
+\emph{Technical Lead, Atmospheric Science (Staff Software Engineer)} \rdate{\textsc{July} 2021-\textsc{October} 2023}
+\begin{itemize}[itemindent=-10pt]
+	\item Worked across Product, Perception, and Systems Engineering teams to develop and execute a roadmap to launch an all-weather autonomous vehicle capability
+	\item Implemented a strategy to \href{https://waymo.com/blog/2022/11/using-cutting-edge-weather-research-to-advance-the-Waymo-Driver.html}{leverage Waymo vehicles as mobile weather stations} by boot-strapping weather estimation capabilities on top of our existing sensor/Perception stack; this led to a significant increase in the amount of weather data we autonomously collected and labeled, accelerating the launch of product operations in inclement weather conditions
+	\item Led the development and implementation of infrastructure to collect and process fleet-borne measurements in real-time to monitor weather conditions and changes across operational territories
+	\item Established research partnerships with academic and public labs for furthering investments in sensor- and ML-based weather estimation techniques and experimental design for testing all-weather vehicle capabilities
+	\item Developed and implemented concepts of operations and safety protocols for responding to severe and hazardous weather, including winter storms and severe convective weather including hailstorms and tornadoes
+	\item Implemented strategies and infrastructure for consuming weather data and forecasts from first- and third-party vendors, and incorporated them into operaitonal decision-making frameworks
+\end{itemize}
 
 \medskip
 \textbf{\href{http://www.tomorrow.io}{Tomorrow.io} (formerly ClimaCell)} \newline
@@ -542,6 +562,8 @@ Reddit (volunteer)
 \medskip
 \begin{enumerate}[itemindent=-10pt]
 
+\item \href{https://github.com/darothen/ai-models-for-all}{ai-models-for-all: Run AI NWP forecasts hassle-free, serverless in the cloud!}. Last Updated: v0.0.1, December, 2023
+
 \item \href{https://github.mit.edu/marc/marc_cesm}{MARC: Model for Research of Aerosols and Climate}. doi:\href{https://doi.org/10.5281/zenodo.1117370}{10.5281/zenodo.1117370}. Last Updated: v1.0.4, December, 2017
 
 \item \href{https://github.com/darothen/xbpch}{xbpch: xarray interface for bpch files}. doi:\href{https://doi.org/10.5281/zenodo.584153}{10.5281/zenodo.584153}. Last Updated: v0.3.0, May, 2017.
@@ -550,7 +572,7 @@ Reddit (volunteer)
 
 \item \href{https://github.com/darothen/py-mie}{py-mie: Python wrapper for Mie subroutines}. doi: \href{http://doi.org/10.5281/zenodo.192510} Last Updated: v0.4.0, December, 2016
 
-\item \href{https://github.com/darothen/experiment}{experiment: high-performance, distributed processing of large-scale geophysical modeling experiment output} (\emph{in prep})
+\item \href{https://github.com/darothen/experiment}{experiment: high-performance, distributed processing of large-scale geophysical modeling experiment output}. Last Updated: December, 2016
 
 \item Contributor/collaborator: \href{https://bitbucket.org/gcst/gcpy/}{GCPy}, \href{https://github.com/pydata/xarray}{xarray}, \href{https://github.com/pangeo-data/pangeo}{pangeo-data}
 
@@ -591,6 +613,8 @@ Reddit (volunteer)
 \medskip
 \begin{itemize}[itemindent=-10pt]
 
+ \item \textbf{Rothenberg, Daniel}. \href{https://ams.confex.com/ams/104ANNUAL/meetingapp.cgi/Paper/440122}{Enabling Scalable, Serverless Weather Model Analyses by "Kerchunking" Data in the Cloud}. AMS Annual Meeting. Baltimore, MD, 2024.
+
  \item \textbf{Rothenberg, Daniel}. \href{https://ams.confex.com/ams/103ANNUAL/meetingapp.cgi/Paper/412555}{Driving Hyper-Local Weather Information with Autonomous Vehicles}. AMS Annual Meeting. Denver, CO, 2023.
  
  \item Biryukov, S., Minsk, J., and \textbf{Rothenberg, D.} \href{https://ams.confex.com/ams/102ANNUAL/meetingapp.cgi/Paper/389735}{Physics-Informed Downscaling, Bias Correction, and Bayesian Probabilistic Ensembling of Weather Forecast Models}. AMS Annual Meeting. Houston, TX / Virtual, 2022.
@@ -629,6 +653,8 @@ Reddit (volunteer)
 \emph{Proposed / Chaired Conference Sessions}
 \medskip
 \begin{itemize}[itemindent=-10pt]
+
+ \item Pure AI and Data-Driven Weather Forecasts. 23rd Conference on Artificial Intelligence for Environmental Science. AMS Annual Meeting, Baltimore, MD, 2024.
 
  \item Towards Operationalizing AI-Based Weather Forecast and Decision Support Products. 22nd Conference on Artifical Intelligence for Environmental Science. AMS Annual Meeting, Denver, CO, 2023.
 
@@ -736,7 +762,8 @@ Association for Computing Machinery \rdate{2011-2012} \newline
 \emph{\small{Note: Please visit my \href{http://www.github.com/darothen/}{Github} page for examples of projects implementing these skills}}\newline
 
 \begin{itemize}
-  \item \textbf{Data Science} - Python (\emph{expert}), Spark/dask/MPI, Prefect/Airflow/Argo, Matlab, Java, d3.js, git/hg/svn, R (\emph{familiar})
+  % \item \textbf{Data Science} - Python (\emph{expert}), Spark/dask/MPI, Prefect/Airflow/Argo, Matlab, Java, d3.js, git/hg/svn, R (\emph{familiar})
+  \item \textbf{AI and Machine Learning} - Python (\emph{expert}), TensorFlow/PyTorch/JAX; significant practical experience building CNN- and Transformer-based models for remote sensing and weather forecasting applications; operationalizing AI systems for production use cases
   \item \textbf{Numerical Modeling} - Python/NumPy/Cython/Numba, Julia, legacy/modern Fortran, C/C++/CUDA; emphasis on scientific software design and application of software engineering to numerical codes/tools, as well as the development of high-performance, distributed analysis systems for tera/peta-scale data.
   \item \textbf{DevOps} - Kubernetes, Argo, Helm 
   \item \textbf{Atmospheric/Climate Models} - \href{http://www.github.com/darothen/pyrcel}{pyrcel}, GEOS-Chem/GCHP, CESM, MIT-CRM, WRF (\emph{familiar})
