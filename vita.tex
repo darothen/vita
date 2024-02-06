@@ -6,7 +6,7 @@
 \def\myauthor{Daniel Rothenberg}
 \def\mytitle{vita}
 \def\myemail{daniel@danielrothenberg.com}
-\def\myworkemail{darothen@google.com}
+\def\myworkemail{} % \def\myworkemail{darothen@google.com}
 \def\mytwitter{danrothenberg}
 \def\mywebsite{http://www.danielrothenberg.com}
 \def\mywebsiteshort{danielrothenberg.com}
@@ -158,10 +158,10 @@
     \flushright \footnotesize
     \href{tel:\myphone}{\myphone}~\faPhone \\
     \href{mailto:\myemail}{\myemail} ~\faEnvelope \\
-    \href{mailto:\myworkemail}{\myworkemail} ~\faEnvelope \\
+    % \href{mailto:\myworkemail}{\myworkemail} ~\faEnvelope \\
     \href{https://www.twitter.com/\mytwitter}{@\mytwitter} ~\faTwitter \\
     \href{\mywebsite}{\mywebsiteshort} ~\faGlobe % \\
-    % \href{http://orcid.org/0000-0002-8270-4831}{0000-0002-8270-4831} ~\aiOrcid
+    % \href{http://orcid.org/0000-0002-8270-4831}{0000-0002-8270-4831} ~\faOrcid
   \end{minipage}
 }\par
 \hrulefill
@@ -241,7 +241,7 @@ B.S., Atmospheric Science, \emph{magna cum laude}, Honors in Research \rdate{\te
 
 \bigskip
 \mhead{Honors \newline and \newline Awards}%
-Outstanding Student Presentation Award ($\dagger$), AMS                          \rdate{2015} \newline
+Outstanding Student Presentation Award ($\dagger$), AMS              \rdate{2015} \newline
 National Science Foundation Graduate Research Fellowship, NSF        \rdate{2012} \newline
 National Defense Science And Engineering Fellowship, ASEE (\emph{declined}) \rdate{2012} \newline
 Father James B. Macelwane Award in Meteorology, AMS                  \rdate{2011} \newline
@@ -440,7 +440,7 @@ Reddit (volunteer)
 \mhead{Work \newline Experience}%
 
 \textbf{\href{http://research.google.com}{Google Research}} \newline
-\emph{Staff Software Engineer (Bungee)} \rdate{\textsc{November} 2023-\textsc{Present}}
+\emph{Staff Software Engineer (Bungee)} \rdate{\textsc{November} 2023-\textsc{December} 2023}
 \begin{itemize}[itemindent=-10pt]
   \item Developed and implemented evaluation frameworks and software to guide the development of a fourth-generation MetNet AI-based short-range forecasting system, with an emphasis on supporting downstream product applications in Africa, South America, and India
 \end{itemize}
@@ -449,7 +449,7 @@ Reddit (volunteer)
 \textbf{\href{http://www.waymo.com}{Waymo}} \newline
 \emph{Technical Lead, Atmospheric Science (Staff Software Engineer)} \rdate{\textsc{July} 2021-\textsc{October} 2023}
 \begin{itemize}[itemindent=-10pt]
-	\item Worked across Product, Perception, and Systems Engineering teams to develop and execute a roadmap to launch an all-weather autonomous vehicle capability
+	\item Worked across Product, Perception, and Systems Engineering teams to develop and execute a roadmap to launch an all-weather autonomous vehicle capability, expanding Waymo One's operational design domain to encompass more than 99\% of potential operating time in its San Francisco, Phoenix, and Los Angeles service territories.
 	\item Implemented a strategy to \href{https://waymo.com/blog/2022/11/using-cutting-edge-weather-research-to-advance-the-Waymo-Driver.html}{leverage Waymo vehicles as mobile weather stations} by boot-strapping weather estimation capabilities on top of our existing sensor/Perception stack; this led to a significant increase in the amount of weather data we autonomously collected and labeled, accelerating the launch of product operations in inclement weather conditions
 	\item Led the development and implementation of infrastructure to collect and process fleet-borne measurements in real-time to monitor weather conditions and changes across operational territories
 	\item Established research partnerships with academic and public labs for furthering investments in sensor- and ML-based weather estimation techniques and experimental design for testing all-weather vehicle capabilities
@@ -459,7 +459,7 @@ Reddit (volunteer)
 
 \medskip
 \textbf{\href{http://www.tomorrow.io}{Tomorrow.io} (formerly ClimaCell)} \newline
-\emph{Advisor} \rdate{\textsc{July} 2021-\textsc{Present}}
+\emph{Advisor} \rdate{\textsc{July} 2021-\textsc{October} 2021}
 \newline
 \emph{Chief Scientist} \rdate{\textsc{Sep} 2018-\textsc{July} 2021}
 \newline
@@ -509,7 +509,7 @@ Reddit (volunteer)
  \medskip
  \begin{enumerate}[itemindent=-10pt]
 
- \item Eastham, S., Monier, E., \textbf{Rothenberg, D.}, Paltsev, S., Selin, N.: \href{https://pubs.acs.org/doi/10.1021/acsenvironau.2c00054}{Rapid estimation of climate-air quality interactions in integrated assessment using a response surface model}, XXXX, XXX, XXX-XXX, ACS Environ. AU, doi:10.1021/acsenvironau.2c00054, 2023
+ \item Eastham, S., Monier, E., \textbf{Rothenberg, D.}, Paltsev, S., Selin, N.: \href{https://pubs.acs.org/doi/10.1021/acsenvironau.2c00054}{Rapid estimation of climate-air quality interactions in integrated assessment using a response surface model}, ACS Environ. AU, 3, 3, 153-163. doi:10.1021/acsenvironau.2c00054, 2023
 
  \item Silva, S., Ma, P.-L., Hardin, J., \textbf{Rothenberg, D.}: \href{https://doi.org/10.5194/gmd-14-3067-2021}{Physically Regularized Machine Learning Emulators of Aerosol Activation}, Geosci. Model Dev., 14, 3067–3077, doi:10.5194/gmd-14-3067-2021, 2021.
 
@@ -562,13 +562,13 @@ Reddit (volunteer)
 \medskip
 \begin{enumerate}[itemindent=-10pt]
 
-\item \href{https://github.com/darothen/ai-models-for-all}{ai-models-for-all: Run AI NWP forecasts hassle-free, serverless in the cloud!}. Last Updated: v0.0.1, December, 2023
+\item \href{https://github.com/darothen/ai-models-for-all}{ai-models-for-all: Run AI NWP forecasts hassle-free, serverless in the cloud!}. Last Updated: v0.2.0, January, 2024
+
+\item \href{https://github.com/darothen/pyrcel}{pyrcel: cloud parcel model}. doi: \href{https://doi.org/10.5281/zenodo.163265}{10.5281/zenodo.163265}. Last Updated: v1.3.2, September, 2023.
 
 \item \href{https://github.mit.edu/marc/marc_cesm}{MARC: Model for Research of Aerosols and Climate}. doi:\href{https://doi.org/10.5281/zenodo.1117370}{10.5281/zenodo.1117370}. Last Updated: v1.0.4, December, 2017
 
 \item \href{https://github.com/darothen/xbpch}{xbpch: xarray interface for bpch files}. doi:\href{https://doi.org/10.5281/zenodo.584153}{10.5281/zenodo.584153}. Last Updated: v0.3.0, May, 2017.
-
-\item \href{https://github.com/darothen/pyrcel}{pyrcel: cloud parcel model}. doi: \href{https://doi.org/10.5281/zenodo.163265}{10.5281/zenodo.163265}. Last Updated: v1.3.0, October, 2016.
 
 \item \href{https://github.com/darothen/py-mie}{py-mie: Python wrapper for Mie subroutines}. doi: \href{http://doi.org/10.5281/zenodo.192510} Last Updated: v0.4.0, December, 2016
 
@@ -582,6 +582,12 @@ Reddit (volunteer)
 % % PRESENTATIONS / TALKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% NOTE: Manually added a \newpage here on 2024-02-06 to avoid a bug where the publication list
+% was spanning a page break and causing an entire page to fail to render ("blue page of death").
+% Given the current sizing of the document contents, it's entirely reasonable to use this
+% manual direction as there isn't very much extra whitespace added.
+\newpage
+
 \bigskip
 \mhead{Presentations \newline and \newline Talks}%
 %\emph{Please see \href{http://danielrothenberg.com/about/publicationspresentations}{my personal homepage} for a complete list of recent talks}
@@ -592,6 +598,8 @@ Reddit (volunteer)
 \emph{Invited Talks and Seminars}
 \medskip
 \begin{itemize}[itemindent=-10pt]
+
+ \item Texas A\&M Atmospheric Sciences Seminar, \textit{Invited Speaker}, College Station, TX, April 2024.
 
  \item University of Albany Atmospheric Sciences Research Colloquium, \textit{Invited Speaker}, Albany, NY, October 2023.
 
@@ -655,6 +663,8 @@ Reddit (volunteer)
 \begin{itemize}[itemindent=-10pt]
 
  \item Pure AI and Data-Driven Weather Forecasts. 23rd Conference on Artificial Intelligence for Environmental Science. AMS Annual Meeting, Baltimore, MD, 2024.
+
+ \item Towards Operationalizing AI/ML Weather Forecast and Decision Support Products. Joint with the 14th Conference on Transition of Research to Operations and 23rd Conference on Artificial Intelligence for Environmental Science AMS Annual Meeting, Baltimore, MD, 2024.
 
  \item Towards Operationalizing AI-Based Weather Forecast and Decision Support Products. 22nd Conference on Artifical Intelligence for Environmental Science. AMS Annual Meeting, Denver, CO, 2023.
 
@@ -727,9 +737,11 @@ Reddit (volunteer)
 \medskip
 \begin{itemize}[itemindent=-10pt]
 
+ \item \href{https://weatherbrains.com/?p=10227}{Weather Brains Episode 889: Ankle Bracelet for Highway Jerks} (Waymo and Weather). Weather Brains Podcast. January 31, 2023.
+
  \item Climate Chords. WUOL, WFPL, and SONICBernheim. Louisville, KY, August 2018
 
- \item  \href{https://docs.google.com/presentation/d/158WNGamjcRgUr1TvOVVixOQXRt1uc2kUyYe5a6D9ICA/edit?usp=drive_web}{What's the Deal with Climate Change?} Esplanade Association Lecture Series. Boston, MA. 2017
+ \item \href{https://docs.google.com/presentation/d/158WNGamjcRgUr1TvOVVixOQXRt1uc2kUyYe5a6D9ICA/edit?usp=drive_web}{What's the Deal with Climate Change?} Esplanade Association Lecture Series. Boston, MA. 2017
 
  \item Additional talks to churches, community organizations, and classrooms through \href{https://climatevoices.org/}{Climate Voices}.
 
@@ -762,7 +774,7 @@ Association for Computing Machinery \rdate{2011-2012} \newline
 \emph{\small{Note: Please visit my \href{http://www.github.com/darothen/}{Github} page for examples of projects implementing these skills}}\newline
 
 \begin{itemize}
-  % \item \textbf{Data Science} - Python (\emph{expert}), Spark/dask/MPI, Prefect/Airflow/Argo, Matlab, Java, d3.js, git/hg/svn, R (\emph{familiar})
+  \item \textbf{Data Science} - Python (\emph{expert}), Spark/dask/MPI, Prefect/Airflow/Argo, Matlab, Java, d3.js, git/hg/svn, R (\emph{familiar})
   \item \textbf{AI and Machine Learning} - Python (\emph{expert}), TensorFlow/PyTorch/JAX; significant practical experience building CNN- and Transformer-based models for remote sensing and weather forecasting applications; operationalizing AI systems for production use cases
   \item \textbf{Numerical Modeling} - Python/NumPy/Cython/Numba, Julia, legacy/modern Fortran, C/C++/CUDA; emphasis on scientific software design and application of software engineering to numerical codes/tools, as well as the development of high-performance, distributed analysis systems for tera/peta-scale data.
   \item \textbf{DevOps} - Kubernetes, Argo, Helm 
@@ -778,7 +790,7 @@ Association for Computing Machinery \rdate{2011-2012} \newline
 
 \medskip
 \mhead{Personal \newline Interests}%
-Violin performance - classical (24 years),
+Violin performance - classical (26 years),
 Winter sports,
 Backpacking/hiking,
 Software development/
