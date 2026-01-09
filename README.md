@@ -4,6 +4,18 @@ This is a working version of my CV, originally forked from the design by [Kieran
 
 ### Instructions
 
+#### Using Just (recommended)
+
+The `justfile` provides a modern alternative to Make. Run commands using `uvx rust-just`:
+
+    $ uvx --from rust-just just cv        # Build CV only
+    $ uvx --from rust-just just resume    # Build resume only
+    $ uvx --from rust-just just all       # Build both CV and resume
+    $ uvx --from rust-just just clean     # Remove build artifacts
+    $ uvx --from rust-just just deepclean # Remove all compiled PDFs
+
+#### Using Make
+
 The `Makefile` should already be setup to compile the `vita.tex`. From a command prompt, execute
 
     $ make cv
