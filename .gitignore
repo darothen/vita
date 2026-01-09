@@ -1,0 +1,65 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ilg
+*.ind
+*.bcf
+*.run.xml
+*.auxlock
+*.figlist
+*.makefile
+*.xdv
+missfont.log
+
+# Compiled PDFs
+*.pdf
+!README.pdf
+!LICENSE.pdf
+
+# Backup files
+*.bak
+*~
+*.swp
+*.swo
+*#
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor-specific files
+*.sublime-project
+*.sublime-workspace
+.vscode/
+.idea/
+*.iml
+
+# Compiled output directory
+compiled/
+
+# Personal/application materials
+Applications/
+old_content/
+
+# Temporary files
+*.tmp
+*.temp
+

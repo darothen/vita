@@ -1,0 +1,164 @@
+% arara: xelatex
+% arara: lmkclean
+
+\documentclass[11pt,letterpaper]{article}
+
+\def\myauthor{Daniel Rothenberg}
+\def\mytitle{vita}
+\def\myemail{darothen@mit.edu}
+\def\mytwitter{danrothenberg}
+\def\mywebsite{http://www.danielrothenberg.com}
+\def\mywebsiteshort{danielrothenberg.com}
+\def\myphone{(502) 648-7513}
+\def\mykeywords{}
+
+\setlength\parindent{0pt}
+
+\newenvironment{itemize*}%
+{\begin{itemize}%
+  \setlength{\itemsep}{0pt}}%
+{\end{itemize}}
+
+\usepackage{comment}
+\usepackage{url}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\setlist{nolistsep,leftmargin=0.15in}
+\usepackage[log-declarations=false]{xparse}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage[margin=0.2in,right=.75in,left=1.5in]{geometry}
+\usepackage[strict]{changepage}
+\usepackage[
+  ocgcolorlinks,
+  urlcolor={[rgb]{0,0,0.54}},
+  unicode,
+  plainpages=false,
+  pdfpagelabels,
+  pdftitle={\mytitle},
+  pdfauthor={\myauthor},
+  pdfkeywords={\mykeywords}
+]{hyperref}
+% NOTE: See https://tex.stackexchange.com/questions/132888/fontawesome-font-not-found
+% to see why we manually specify this as of 9/20/22
+\defaultfontfeatures{
+    Path = /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/fontawesome/ }
+\usepackage{fontawesome}
+% \usepackage{academicons}
+
+% fix ocgcolor link breaking; thanks due to Benjamin Lerner (http://goo.gl/VZKR7M)
+\makeatletter
+\AtBeginDocument{%
+  \newlength{\temp@x}%
+  \newlength{\temp@y}%
+  \newlength{\temp@w}%
+  \newlength{\temp@h}%
+  \def\my@coords#1#2#3#4{%
+    \setlength{\temp@x}{#1}%
+    \setlength{\temp@y}{#2}%
+    \setlength{\temp@w}{#3}%
+    \setlength{\temp@h}{#4}%
+    \adjustlengths{}%
+    \my@pdfliteral{\strip@pt\temp@x\space\strip@pt\temp@y\space\strip@pt\temp@w\space\strip@pt\temp@h\space re}}%
+  \ifpdf
+    \typeout{In PDF mode}%
+    \def\my@pdfliteral#1{\pdfliteral page{#1}}% I don't know why % this command...
+    \def\adjustlengths{}%
+  \fi
+  \ifxetex
+    \def\my@pdfliteral #1{\special{pdf: literal direct #1}}% isn't equivalent to this one
+    \def\adjustlengths{\setlength{\temp@h}{-\temp@h}\addtolength{\temp@y}{1in}\addtolength{\temp@x}{-1in}}%
+  \fi%
+  \def\Hy@colorlink#1{%
+    \begingroup
+      \ifHy@ocgcolorlinks
+        \def\Hy@ocgcolor{#1}%
+        \my@pdfliteral{q}%
+        \my@pdfliteral{7 Tr}% Set text mode to clipping-only
+      \else
+        \HyColor@UseColor#1%
+      \fi
+  }%
+  \def\Hy@endcolorlink{%
+    \ifHy@ocgcolorlinks%
+      \my@pdfliteral{/OC/OCPrint BDC}%
+      \my@coords{0pt}{0pt}{\pdfpagewidth}{\pdfpageheight}%
+      \my@pdfliteral{F}% Fill clipping path (the url's text) with current color
+      \my@pdfliteral{EMC/OC/OCView BDC}%
+      \begingroup%
+        \expandafter\HyColor@UseColor\Hy@ocgcolor%
+        \my@coords{0pt}{0pt}{\pdfpagewidth}{\pdfpageheight}%
+        \my@pdfliteral{F}% Fill clipping path (the url's text) with \Hy@ocgcolor
+      \endgroup%
+      \my@pdfliteral{EMC}%
+      \my@pdfliteral{0 Tr}% Reset text to normal mode
+      \my@pdfliteral{Q}%
+    \fi
+    \endgroup
+  }%
+}
+\makeatother
+% end fixes
+
+\newcommand{\mhead}[1]{\leavevmode\marginpar{\sffamily\footnotesize #1}}
+\newcommand{\rdate}[1]{{\addfontfeature{Numbers=OldStyle} \hfill #1}}
+\renewcommand{\date}[1]{{\addfontfeature{Numbers=OldStyle} #1}}
+\renewcommand{\labelitemi}{}
+
+\setmainfont[
+  Ligatures={TeX,Common},
+  Path=/Users/daniel/Library/Fonts
+%  BoldFont={AGaramondPro-Semibold},
+]{Corbel} % other options: Corbel, Palatino, Adobe Garmond Pro, TeX Gyre Common.
+          % Corbel is a Microsoft font and no longer distributed with Office 2016 and above; Liberation Sans is a potential alternative
+\setsansfont[
+  Ligatures={TeX,Common},
+  Letters=SmallCaps,
+  Color=660000,
+  Path=/Users/daniel/Library/Fonts
+]{Corbel}
+\setmonofont[
+  Path=/usr/local/texlive/2022/texmf-dist/fonts/opentype/public/fontawesome
+]{FontAwesome}
+
+\begin{document}
+\pagestyle{fancy} \setlength\headwidth{6.5in}
+\rhead{\textsc{daniel a.~rothenberg—resume—\thepage{} of \pageref*{LastPage}}} \cfoot{}
+\thispagestyle{empty}
+\begin{adjustwidth}{-1in}{}
+{\Large\textbf{
+  {\textsc{%
+    {\addfontfeature{Style=TitlingCaps}D}\kern-1.5ptaniel
+    {\addfontfeature{Style=TitlingCaps}A}\kern-2pt.~%
+    {\addfontfeature{Style=TitlingCaps}R}othenberg}
+  }
+ }
+}
+\hfill\hfill\hfill
+{\small
+  \begin{minipage}[b]{1.6in}
+    \flushleft \footnotesize
+    77 Massachusetts Avenue \\
+    Building E18-402 \\
+    Cambridge, MA~~02139
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{1.6in}
+    \flushright \footnotesize
+    \href{tel:\myphone}{\myphone}~\faPhone \\
+    \href{mailto:\myemail}{\myemail} ~\faEnvelope \\
+    \href{https://www.twitter.com/\mytwitter}{@\mytwitter} ~\faTwitter \\
+    \href{\mywebsite}{\mywebsiteshort} ~\faGlobe % \\
+    % \href{http://orcid.org/0000-0002-8270-4831}{0000-0002-8270-4831} ~\aiOrcid
+  \end{minipage}
+}\par
+\hrulefill
+\end{adjustwidth}
+\reversemarginpar
+\setlength\marginparwidth{0.85in}
+
+
+
+
+\end{document}
